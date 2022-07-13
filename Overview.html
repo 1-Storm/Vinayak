@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Overview</title>
+     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+     <style>
+*{
+     margin: 0;
+     padding: 0;
+     font-family: Calibri;
+     text-decoration: none;
+     list-style: none;
+}
+body{
+     background-image: url(ComputerScinece.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+nav{
+     height: 80px;
+     width: 100%;
+     background: blue;
+     position: relative;
+     top: 10%;
+     z-index: 1;
+}
+
+label.logo{
+     font-size: 25px;
+     font-weight: bold;
+     color: white;
+     padding: 0 100px;
+     line-height: 80px;
+}
+
+nav ul{
+     float: right;
+     margin-right: 40px;
+}
+
+nav li{
+     display: inline-block;
+     margin: 0 8px;
+     line-height: 80px;
+}
+
+nav a{
+     color:white;
+     font-size: 18px;
+     text-transform: uppercase;
+     border: 1px solid red transparent;
+     padding: 7px 10px;
+     border-radius: 3px;
+     transition: 1s ease;
+}
+
+nav a:hover{
+     background-color: lightskyblue;
+}
+
+nav #icon{
+     color: white;
+     font-size: 30px;
+     line-height: 80px;
+     float: right;
+     margin-right: 40px;
+     cursor: pointer;
+     display: none;
+}
+@media (max-width: 1048px){
+     label.logo{
+          font-size: 32px;
+          padding-left: 60px;
+     }
+     nav ul{
+          margin-right: 20px;
+     }
+     nav a{
+          font-size: 17px;
+     }
+}
+
+@media (max-width: 909px){
+     nav #icon{
+          display: block;
+     }
+     nav ul{
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background: #2f3640;
+          top: 80px;
+          left: -100%;
+          text-align: center;
+          transition: all .5s;
+          z-index: 2;
+     }
+     nav li{
+          display:block;
+          margin: 50px 0;
+          line-height: 30px;
+     }
+     nav a{
+          font-size: 20px;
+     }
+     nav a:hover{
+          border: none;
+          color: #3498db;
+          background: none;
+     }
+     nav ul.show{
+          left:0;
+     }
+}
+.text{
+     color: white;
+     font-size: 241%;
+     font-weight: 900;
+     font-family: cursive;
+}
+.box{
+     margin: 5% 22% 0% 10%;
+}
+     </style>
+     <script>
+          $(document).ready(function(){
+               $('#icon').click(function(){
+                $('ul').toggleClass('show')
+               });
+          });
+     </script>
+</head>
+<body>
+     <header>
+          <nav class="navbar">
+               <label class="logo">VinPro</label>
+               <ul>
+                    <li><a href="https://www.youtube.com/channel/UCwu3eDtHzeIyxpar24UiBfQ">Home</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCwu3eDtHzeIyxpar24UiBfQ/videos">Videos</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCwu3eDtHzeIyxpar24UiBfQ/playlists">Playlists</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCwu3eDtHzeIyxpar24UiBfQ/about">About Us</a></li>
+               </ul>
+               <label id="icon">
+                    <i class="fas fa-bars"></i>
+               </label>
+          </nav>
+     </header>
+     <content>
+          <div class="box">
+               <div class="text">My Channel Name is Google Boy Vinayak Chandra Go to My channel and Like it Subscribe it and Share it.</div><br>
+               <a href="https://www.youtube.com/channel/UCwu3eDtHzeIyxpar24UiBfQ" style="color: white; text-decoration: none; background-color:  blue; padding: 2%;">Go to my Youtube Channel</a><br><br>
+               <a href="original.html" style="color: green;">Back to my Home page</a>
+          </div>
+     </content>
+</body>
+</html>
